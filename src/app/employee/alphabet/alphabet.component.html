@@ -1,0 +1,40 @@
+<!-- function createAlphabetButtons() {
+    const filterBy :(HTMLElement | null) = document.getElementById('filter-by-letter');
+    const buttons = [];
+
+    for (let index = 0; index < 26; index++) {
+        const button = document.createElement('button');
+        button.classList.add('filter-item');
+        button.textContent = String.fromCharCode(65 + index);
+
+        button.addEventListener('click', () => {    
+            const activeButtons = document.querySelectorAll('.active-btn');
+            activeButtons.forEach(btn => {
+                btn.classList.remove('active-btn');
+            });
+            button.classList.add('active-btn');
+            selectedAlphabet = String.fromCharCode(65 + index);
+            const filteredEmployees = filterEmployees(employees);
+            renderTable(filteredEmployees);
+        });
+
+        buttons.push(button);
+    }
+
+    buttons.forEach(button => filterBy?.appendChild(button));
+} -->
+
+
+
+
+
+<section id = "filter-by-letter" class="flex-space-between mb-20">
+    <div class = "cursor-pointer">
+        <img src="./assets/filter.png" alt="" class="pl-6">
+    </div>
+    <div *ngFor="let number of numbers; let index = index">
+        <button class="filter-item">{{alphabet(index)}}</button>
+    </div>
+</section>
+
+

@@ -1,0 +1,17 @@
+<section id="filter-category-container" class="flex-space-between mb-20">
+    <div class="flex-space-between">
+        <p class= "color-red">Filter</p>
+        <img src="./assets/filter-funnel.svg" alt="">
+        <form action="">
+            <div id = "filter-categories" class="flex-space-between">
+                <app-drop-down [className]="className" [id]="statusId" [options]="statusList" [name]="status"></app-drop-down>
+                <app-drop-down [className]="className" [id]="locationId" [options]="locations" [name]="location"></app-drop-down>
+                <app-drop-down [className]="className" [id]="deptId" [options]="depatments" [name]="dept"></app-drop-down>
+            </div>
+        </form>
+    </div>
+    <div>
+        <button class="reset-btn bordered f12" id="dismiss-filter">Reset</button>
+        <button class="apply-btn f12" id = "apply-filter">Apply</button>
+    </div>
+</section>

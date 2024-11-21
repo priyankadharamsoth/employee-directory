@@ -1,0 +1,38 @@
+.reset-btn {
+    border: 1px solid #fde6e6;
+    background-color: white;
+    border-radius: 4px;
+    color: #f44848;
+    padding: 4px 10px;
+    margin-right: 4px ;
+}
+
+.dismiss-btn {
+    border: 1px solid #fde6e6;
+    background-color: #fde6e6;
+    border-radius: 4px;
+    color: #f44848;
+    padding:  10px 20px;
+    margin-right: 4px ;
+}
+
+.apply-btn {
+    border: 1px solid #f44848;
+    background-color: #f44848;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 10px;
+}
+
+#filter-categories {
+    margin-left: 12px;
+}
+
+#filter-category-container {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fbc4c4;
+    background-color: #fdf2f2;
+    border-radius: 6px;
+    box-sizing: border-box;
+}

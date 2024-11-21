@@ -1,0 +1,65 @@
+#employees-container {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    background-color: white;
+}
+
+
+
+table {
+    width: 100%;
+    color:#2c2c2c;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+th {
+    color:#65728b;
+    text-transform: uppercase;
+    background-color: #fafafc;
+}
+
+td, th {
+    border: none;
+    text-align: left;
+    padding: 12px 20px; 
+}
+
+tr {
+    border-top:  1px solid #dddddd;
+}
+
+tr:hover {
+    background-color: #fff4f4;
+}
+
+
+.status-active-btn {
+    color: green;
+    background-color: #e7f4e8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.status-inactive-btn {
+    color: red;
+    background-color: #fde6e6;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.del-btn {
+    background-color: #f89191;
+    border: 1px solid #f89191;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 10px;
+    cursor: not-allowed;
+}

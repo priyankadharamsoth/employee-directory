@@ -1,3 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #fcfcfc;
+}
+
+p {
+    margin: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 #horizontal-nav {
     position: fixed;
     height: 100%;
@@ -100,6 +119,12 @@
     padding: 10px 10px;
 }
 
+.rounded-img {
+   border-radius: 50%;
+   margin-right: 6px;
+   object-fit: cover;
+}
+
 .primary-text {
     color: #f44848;
     font-weight: bold;
@@ -136,6 +161,62 @@
     padding: 4px 10px;
 }
 
+
+.dismiss-btn {
+    border: 1px solid #fde6e6;
+    background-color: #fde6e6;
+    border-radius: 4px;
+    color: #f44848;
+    padding:  10px 20px;
+    margin-right: 4px ;
+}
+
+.reset-btn {
+    border: 1px solid #fde6e6;
+    background-color: white;
+    border-radius: 4px;
+    color: #f44848;
+    padding: 4px 10px;
+    margin-right: 4px ;
+}
+
+#search-container {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#search-container input[type=search] {
+    border: none ;
+    background-color: white;
+  }
+
+#search-container input:focus{
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  color: #bbc2c9;
+} 
+
+#trailing {
+    display: flex;
+    justify-content:end;
+}
+
+#filter-by-letter button {
+    border: 1px solid #eaebee;
+    background-color: #eaebee;
+    padding: 12px;
+    border-radius: 4px;
+    color: #8b97a7;
+}
+
 .filter-header {
     color: #5c6e7e;
     font-weight: bold;
@@ -161,10 +242,131 @@
     margin-right: 10px;
 }
 
+.del-btn {
+    background-color: #f89191;
+    border: 1px solid #f89191;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 10px;
+    cursor: not-allowed;
+}
+
 .primary-btn {
     color: white;
     background-color: #f44848;
     border: none;
+}
+
+#filter-category-container {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fbc4c4;
+    background-color: #fdf2f2;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+#filter-categories {
+    margin-left: 12px;
+}
+
+.filter-category {
+    border : 0.5px solid #fbc4c4;
+    background-color: white;
+    border-radius: 6px;
+    padding: 6px;
+    margin-right:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #65728b;
+}
+
+#employees-container {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    color:#2c2c2c;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+th {
+    color:#65728b;
+    text-transform: uppercase;
+    background-color: #fafafc;
+}
+
+td, th {
+    border: none;
+    text-align: left;
+    padding: 12px 20px; 
+}
+
+tr {
+    border-top:  1px solid #dddddd;
+}
+
+tr:hover {
+    background-color: #fff4f4;
+}
+
+.status-active-btn {
+    color: green;
+    background-color: #e7f4e8;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.status-inactive-btn {
+    color: red;
+    background-color: #fde6e6;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+select {
+    border: none;
+    padding: 4px 0px;
+}
+
+select:focus{
+    outline: none;
+    border: none;
+}
+
+.bordered {
+    border : 1px solid #ff7782;
+    border-radius: 4px;
+}
+
+.option {
+    color: red;
+}
+
+#profile {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    left: 30px;
+    bottom: 2px;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #4fd189;
+    border: 2px solid white;
 }
 
 .active-delete {
