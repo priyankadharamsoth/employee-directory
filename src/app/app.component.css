@@ -1,27 +1,3 @@
-#horizontal-nav {
-    position: fixed;
-    height: 100%;
-    padding: 24px;
-    width: 14%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 97vh;
-    color: #616569;
-    margin-right: 40px;
-    background-color: white;
-    z-index: 2;
-}
-
-#handle {
-    position: absolute;
-    right: -18px;
-}
-
-.transform{
-    transform: rotate(180deg);
-}
-
 #right-content {
     position: absolute;
     left:18%;
@@ -29,17 +5,7 @@
     padding: 24px 0px;
     background-color: #fcfcfc;
     z-index: 1;
-}
-
-.icon-text.active::after {
-    content: '';
-    position: absolute;
-    right: -25px; 
-    top: 0; 
-    height: 100%; 
-    width: 4px;
-    background-color: red; 
-    border-radius: 12px 0 0 12px;
+    flex-grow: 1;
 }
 
 .cover-all {
@@ -50,100 +16,9 @@
     margin:auto 0  !important;
 }
 
-#logo-container {
-    align-items: center;
-    margin-bottom: 60px;
-}
-
-.title {
-    text-transform: uppercase;
-    font-size: 12px;
-    padding-left: 14px;
-    padding-bottom: 15px;
-    color: rgb(102, 107, 112,0.6);
-    margin: 0;
-}
-
-.icon-text {
-    display: flex;
-    padding: 4px;
-    align-items: center;
-    position: relative;
-    padding-left: 14px;
-}
-
-.active {
-    color: #f44848 !important;
-    border-radius: 8px !important;
-    border: 1px solid #fde9e9 !important;
-    background-color: #fde9e9 !important; 
-}
-
-.active-btn {
-    color: white !important;
-    border-radius: 8px !important;
-    border: 1px solid red !important;
-    background-color: red !important; 
-}
-
-.icon-text img {
-    padding-right: 8px;
-}
-
-.icon-text p {
-    margin: 8px 0;
-}
-
-#update-container {
-    background-color: #fef6f6;
-    border-radius: 8px;
-    padding: 10px 10px;
-}
-
-.primary-text {
-    color: #f44848;
-    font-weight: bold;
-    padding-bottom: 4px;
-}
-
-.secondary-text {
-    color: grey;
-}
-
-#update-container p{
-   padding-bottom: 8px;
-   line-height: 1.25rem;
-}
-
 .row-btns {
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.accept-btn {
-    border: 1px solid #f44848;
-    background-color: #f44848;
-    border-radius: 4px;
-    color: white;
-    padding: 10px 20px;
-}
-
-.apply-btn {
-    border: 1px solid #f44848;
-    background-color: #f44848;
-    border-radius: 4px;
-    color: white;
-    padding: 4px 10px;
-}
-
-.filter-header {
-    color: #5c6e7e;
-    font-weight: bold;
-    padding-bottom: 8px;
-}
-
-.filter-subtitle {
-    color: grey;
 }
 
 .btn {
@@ -159,12 +34,6 @@
     background-color: white;
     border: 1px solid rgb(128, 128, 128,0.5);
     margin-right: 10px;
-}
-
-.primary-btn {
-    color: white;
-    background-color: #f44848;
-    border: none;
 }
 
 .active-delete {
@@ -218,3 +87,5 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
+

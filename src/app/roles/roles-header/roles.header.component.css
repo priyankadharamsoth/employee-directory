@@ -1,0 +1,55 @@
+.dept-header {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 16px;
+}
+
+.dept-body {
+    color: #8f8f8f;
+    padding-bottom: 10px;
+}
+
+.dept-link {
+    color: #4d4d4d;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.profile-pic-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    margin-left: -10px;
+    object-fit: cover;
+}
+
+.additional-count {
+    position: absolute;
+    bottom: 0; 
+    right: -10px; 
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; 
+    color: #8e98aa;
+    border: 1px solid white; 
+}
+.apply-btn {
+    border: 1px solid #f44848;
+    background-color: #f44848;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 10px;
+}

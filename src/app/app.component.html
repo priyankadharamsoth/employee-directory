@@ -1,9 +1,22 @@
-<section id="right-content" style="margin: 0 auto ;">
-    <section id = "employee-container">
-        <app-search></app-search>
-        <app-header></app-header>
-        <app-alphabet></app-alphabet>
-        <app-category></app-category>
-        <app-employee-container></app-employee-container>
+<main class="flex-content-start" style="width: 100%;">
+    <app-horizontal-nav 
+        [isNavbarVisible]="isNavBarVisible" 
+        (hideNavBar)="hideNavBar()">
+    </app-horizontal-nav>
+    <section id="right-content" style="margin: 0 auto;" [ngClass]="{ 'cover-all': isNavBarVisible }">
+        <section id = "employee-container" class="hidden">
+            <app-search></app-search>
+            <app-header></app-header>
+            <app-alphabet></app-alphabet>
+            <app-category></app-category>
+            <app-employee-container></app-employee-container>
+        </section>
+        <section class="hidden">
+            <app-roles-header></app-roles-header>
+            <app-roles></app-roles>
+        </section>
+        <section>
+           <app-role-detail></app-role-detail>
+        </section>
     </section>
-</section>
+</main>

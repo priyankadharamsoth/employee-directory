@@ -1,0 +1,40 @@
+<section id="department" class="flex-space-even">
+    <div class="roles-container" *ngFor = "let role of roles">
+        <div class="flex-space-between dept-header">
+            <p class="bold">{{role.role}}</p>
+            <img src="./assets/edit.svg" alt="" class = "not-allowed">
+        </div>
+        <div class="dept-body">
+            <div class="flex-space-between pb-8">
+                <div class="flex-content-start">
+                    <img src="./assets/team_svgrepo.com.svg" alt="">
+                    <p>Department</p>
+                </div>
+                <p>{{rolesService.getDepartment(role)}}</p>
+            </div>
+            <div class="flex-space-between pb-8">
+                <div class="flex-content-start">
+                    <img src="./assets/location-pin-alt-1_svgrepo.com.svg" alt="">
+                    <p>Location</p>
+                </div>
+                <p>{{rolesService.getLocation(role)}}</p>
+            </div>
+            <div class="flex-space-between pb-8">
+                <p>Total Employees</p>
+                <div class="profile-pic-container" *ngIf="filteredEmpl(role).length > 0; else noEmployees">
+                    <div *ngFor="let emp of filteredEmpl(role)">
+                        <img src="{{emp.profilePicture}}" alt="{{emp.firstName}}" class="profile-pic">
+                    </div>
+                </div>
+                <ng-template #noEmployees>
+                    <p>0</p>
+                </ng-template>
+            </div>
+        </div>
+        <div class="flex-justify-end dept-link f12 cursor-pointer" >
+            <!-- onclick="goToRoleDetails({{role.id}},{{role.departmentId}},{{role.locationId}}) -->
+            <p>View All Employees</p>
+            <img src="./assets/arrow_left.svg" alt="" class="pl-4">
+        </div>
+    </div>
+</section>

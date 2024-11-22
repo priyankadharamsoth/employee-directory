@@ -228,3 +228,49 @@ button {
     margin-right: 6px;
     object-fit: cover;
  }
+
+.hidden {
+    display: none !important;
+}
+
+.dismiss-btn {
+    border: 1px solid #fde6e6;
+    background-color: #fde6e6;
+    border-radius: 4px;
+    color: #f44848;
+    padding:  10px 20px;
+    margin-right: 4px ;
+}
+
+.primary-btn {
+    color: white;
+    background-color: #f44848;
+    border: none;
+}
+
+.filter-header {
+    color: #5c6e7e;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.filter-subtitle {
+    color: grey;
+}
+
+#filter-category-container {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fbc4c4;
+    background-color: #fdf2f2;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.reset-btn {
+    border: 1px solid #fde6e6;
+    background-color: white;
+    border-radius: 4px;
+    color: #f44848;
+    padding: 4px 10px;
+    margin-right: 4px ;
+}

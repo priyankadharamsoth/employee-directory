@@ -257,14 +257,6 @@ input::placeholder {
     border: none;
 }
 
-#filter-category-container {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #fbc4c4;
-    background-color: #fdf2f2;
-    border-radius: 6px;
-    box-sizing: border-box;
-}
 #filter-categories {
     margin-left: 12px;
 }

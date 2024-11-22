@@ -1,0 +1,47 @@
+<div [ngClass]="{ 'hidden': !isNavbarVisible }" (click)="toggleNavbar()" class="transform p-24 cursor-pointer" id="open-navbar">
+    <img src="./assets/handle.png" alt="" height="36px" width="36px">
+</div>
+<aside id="horizontal-nav" [ngClass]="{ 'hidden': isNavbarVisible }" >
+    <div>
+        <div id="logo-container" class="flex-space-between pt-6">
+            <img src="./assets/TezoLogo.png" alt="" height="40px">
+            <div (click)="toggleNavbar()" id="handle" class="cursor-pointer"><img src="./assets/handle.png" alt="" height="36px" width="36px" ></div>
+        </div>
+        <div class="mb-20">
+            <p class="title">All</p>
+            <div class="icon-text not-allowed">
+                <img src="./assets/Horizontal nav/Dashboard.svg" alt="dashboard">
+                <p>Dashboard</p>
+            </div>
+            <div id = "employees-page" class="icon-text active cursor-pointer mb-8" onclick="goToEmployees()">
+                <img id = "employees-svg" src="./assets/Horizontal nav/active_employees.svg" alt="employees">
+                <p>Employees</p>
+            </div>
+        </div>
+        <div>
+            <p class="title">Role/User Management</p>
+            <div id = "roles-page" class="flex-space-between icon-text cursor-pointer"  onclick="goToRoles()">
+                <div class="flex-space-between">
+                    <img id = "roles-svg" src="./assets/Horizontal nav/Roles.svg" alt="role">
+                    <p>Roles</p>
+                </div>
+                <img src="./assets/arrow_right.svg" alt="" class = 'pr-20' id="arrow-right-svg">
+            </div>
+            <div class="flex-space-between icon-text not-allowed" >
+                <div class="flex-space-between">
+                    <img src="./assets/Horizontal nav/assign user.svg" alt="rights">
+                    <p>Access Rights</p>
+                </div>
+                <img src="./assets/arrow_right.svg" alt="" class = 'pr-20'>
+            </div>
+        </div>
+    </div>
+    <div id="update-container">
+        <p class="primary-text">Install new update</p>
+        <p class="secondary-text">Allow to launch the new update for the AD application</p>
+        <div class="row-btns">
+            <button class="dismiss-btn not-allowed">Dismiss</button>
+            <button class="accept-btn not-allowed">Accept</button>
+        </div>
+    </div>
+</aside>
